@@ -40,6 +40,10 @@ body {
     font-size: 1.3vh;
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
 #quote-box {
     background-color: rgba(255, 255, 255, 1);
     color: black;
@@ -49,16 +53,26 @@ body {
     position: absolute;
     padding: 30px 40px;
     display: grid;
-    grid-template-rows: 230px 100px;
+    grid-template-rows: 300px 100px;
     place-items: center;
     grid-auto-flow: dense;
 }
 
-#changeText {
+.quote-author {
+    width: 550px;
+    height: auto;
+    clear: both;
+    padding-top: 20px;
+    font-size: 0.85em;
+    text-align: right;
+    font-style: italic;
+}
+
+.fade-in-text {
     opacity: 1;
     transition: opacity 0.5s;
 }
 
 .hide {
-    opacity: 0 !important;
+    opacity: 0;
 }

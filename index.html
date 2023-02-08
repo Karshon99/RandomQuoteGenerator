@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="module" src="script.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,10 +11,11 @@
   <body>
     <div class="container">
       <wrapper id="quote-box">
-        
-        <div id="text"></div>
-        <div id="author"></div>
-        <button id="new-quote" onClick="newQuote();" class="btn quotegen">Generate Quote</button>
+      <div class="fade-in-text">
+        <div id="text" class="quote-text"></div>
+        <div id="author" class="quote-author"></div>
+      </div>
+        <button id="new-quote" class="btn quotegen">Generate Quote</button>
         <a href="#" id="tweet-quote" class="btn" target="_blank"
           >Tweet your Quote</a
         >
